@@ -8,4 +8,9 @@
 * Will let previous operations finish if something fails.
 * Can potentially cause memory leaks if inner observables are long lived.
 * Works well if you want to flatten inner observables and control inner subscriptions.
-* Works well if you want to flatten inner observables and control inner subscriptions.
+
+## Random JS/TS
+`map` vs `forEach`
+* `forEach` excecutes an action (function, if, etc) once against each element in the array
+* `map` creates a new array with the results of calling an action on each element in the array
+* So, `map` eliminates the need to create a new array and `push` for each element if you are flattening an array of objects.
